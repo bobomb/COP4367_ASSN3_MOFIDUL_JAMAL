@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfTransducer.ControlWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ControlWindow" Height="300" Width="775" Left="200" Top="400" Closing="Window_Closing">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF4418E5" Offset="0"/>
+            <GradientStop Color="#FFA6CBD2" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Loaded="Grid_Loaded" Margin="0,0,-6.4,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="378*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TextBoxCommand" HorizontalAlignment="Left" Height="23" Margin="39.6,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="678" KeyDown="TextBoxCommand_KeyDown" PreviewKeyDown="TextBoxCommand_PreviewKeyDown" Grid.Column="1" Background="#FFC6E6E6"/>
+        <TextBox x:Name="TextBoxHistory" HorizontalAlignment="Left" Height="164" Margin="39.6,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="678" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" Grid.Column="1">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD9DAF1" Offset="0"/>
+                    <GradientStop Color="#FF9D9FCF" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Label Content=" &gt;&gt;" Grid.Column="1" HorizontalAlignment="Left" Margin="0.6,237,0,0" VerticalAlignment="Top" Width="34" Background="#FF8519B7" FontWeight="Bold" Height="23"/>
+        <Label x:Name="LabelResult" Content="" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="39.6,45,0,0" VerticalAlignment="Top" Width="678" Background="#FF9DB2C0" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.138"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Grid x:Name="GridButton" Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="39.6,10,0,0" VerticalAlignment="Top" Width="678"/>
+        <Button x:Name="ButtonCL" Content="CL" Grid.Column="1" HorizontalAlignment="Left" Margin="722.6,10,0,0" VerticalAlignment="Top" Width="24" Click="Button_Click" RenderTransformOrigin="-0.545,1.325" Height="32"/>
+
+    </Grid>
+</Window>
