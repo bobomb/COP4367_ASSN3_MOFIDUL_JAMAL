@@ -82,7 +82,7 @@ namespace WpfTransducer
             if (v > max) v = max;
             return v;
         }
-
+        /*
         public Canvas GenotypeToPhenotypeShrinkingCircles2(List<double> solution)
         {
             // Make a new canvas of the same size as the target bitmap.
@@ -162,7 +162,7 @@ namespace WpfTransducer
 
             return genCanvas;
         }
-
+        */
 
 
         private double FitnessFunction()
@@ -216,8 +216,6 @@ namespace WpfTransducer
 
                 pixelError *= pixelError;
 
-
-
                 //add that to all the other pixel errors.
                 fitness += pixelError;
             }
@@ -227,7 +225,8 @@ namespace WpfTransducer
             //return the negative of the sum of all the pixel errors because the GA expects higher values to be better.
             return -fitness;
         }
-
+        
+        /*
         public Canvas GenotypeToPhenotypeShrinkingCircles(List<double> solution)
         {
             // Make a new canvas of the same size as the target bitmap.
@@ -307,6 +306,7 @@ namespace WpfTransducer
 
             return genCanvas;
         }
+*/
 
         public Canvas GenotypeToPhenotype(List<double> solution)
         {
@@ -328,13 +328,14 @@ namespace WpfTransducer
 
             //The sizeFactor allows the phenotype to implement smaller and smaller ellipses as it implements the list of ellipses.
             //double sizeFactor = solution.Count() / 400;
-            double sizeFactor = 4.0;
+            double sizeFactor = .50;
             int circleCount = 0;
 
             int solutionIndex=0;
             foreach (UIElement uie in genCanvas.Children)
             {
                 Ellipse ellipse = uie as Ellipse;
+                
                 // In this case we are using 8 doubles for each ellipse.
                 // The position of the ellipse is at x,y.
                 // The Height and Width is h and w.
@@ -400,7 +401,7 @@ namespace WpfTransducer
             return genCanvas;
         }
 
-
+        /*
         static public Canvas GenotypeToPhenotypeSimple(List<double> solution)
         {
             // Make a new canvas of the same size as the target bitmap.
@@ -465,7 +466,7 @@ namespace WpfTransducer
 
             return genCanvas;
         }
-
+        */
 
 
         public static void ConvertFEtoRTB(FrameworkElement visual, ref RenderTargetBitmap genBitmap)
