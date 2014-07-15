@@ -42,6 +42,7 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
+    <Optimize>true</Optimize>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <OutputPath>bin\x64\Release\</OutputPath>
@@ -78,7 +79,7 @@
     <Compile Include="Functionality.cs" />
     <Compile Include="GeneticAlgorithm.cs" />
     <Compile Include="Individual.cs" />
-    <Compile Include="OctoPolyArtEvaluator.cs" />
+    <Compile Include="HexaPolyArtEvaluator.cs" />
     <Compile Include="Plain.cs" />
     <Compile Include="Pulser.cs" />
     <Compile Include="Rotater.cs" />

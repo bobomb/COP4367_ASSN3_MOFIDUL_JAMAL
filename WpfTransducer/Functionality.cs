@@ -32,7 +32,7 @@ namespace WpfTransducer
         public TargetWindow genWindow;
         
         GeneticAlgorithm ga;
-        OctoPolyArtEvaluator sombrero = new OctoPolyArtEvaluator();
+        HexaPolyArtEvaluator sombrero = new HexaPolyArtEvaluator();
 
         //TransformGroup canvasTransform;
 
@@ -50,15 +50,15 @@ namespace WpfTransducer
 
             // The target window displays the target image.
             targetWindow = new TargetWindow();
-            targetWindow.Height = OctoPolyArtEvaluator.targetBitmap.Height * 1.1;
-            targetWindow.Width = OctoPolyArtEvaluator.targetBitmap.Width * 1.1;
-            targetWindow.Background = new ImageBrush(OctoPolyArtEvaluator.targetBitmap);
+            targetWindow.Height = HexaPolyArtEvaluator.targetBitmap.Height * 1.1;
+            targetWindow.Width = HexaPolyArtEvaluator.targetBitmap.Width * 1.1;
+            targetWindow.Background = new ImageBrush(HexaPolyArtEvaluator.targetBitmap);
             targetWindow.Show();
 
             // The target window displays the target image.
             genWindow = new TargetWindow();
-            genWindow.Height = OctoPolyArtEvaluator.targetBitmap.Height * 1.1;
-            genWindow.Width = OctoPolyArtEvaluator.targetBitmap.Width * 1.1;
+            genWindow.Height = HexaPolyArtEvaluator.targetBitmap.Height * 1.1;
+            genWindow.Width = HexaPolyArtEvaluator.targetBitmap.Width * 1.1;
             genWindow.Title = "GenWindow";
             genWindow.Show();
 
@@ -74,7 +74,8 @@ namespace WpfTransducer
         {
             for (int i = 0; i < count; i++)
             {
-                System.Diagnostics.Debug.WriteLine("iteration " + i);
+                if(i % 1000 == 0)
+                    System.Diagnostics.Debug.WriteLine("iteration " + i);
                 
                 ga.scoreOfLastSolution = sombrero.evaluate(ga.solution);
             }
@@ -97,7 +98,7 @@ namespace WpfTransducer
             //mainWindow.Content = canvas;
 
             RenderTargetBitmap rtb=null;
-            OctoPolyArtEvaluator.ConvertFEtoRTB(canvas,ref rtb);
+            HexaPolyArtEvaluator.ConvertFEtoRTB(canvas,ref rtb);
             genWindow.Background = new ImageBrush(rtb);
             return "GA Plotted";
         }
