@@ -1,0 +1,16 @@
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\bin\x64\Debug\WpfTransducer.exe.config
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\bin\x64\Debug\WpfTransducer.exe
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\bin\x64\Debug\WpfTransducer.pdb
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Debug\ControlWindow.baml
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Debug\MainWindow.baml
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Debug\TargetWindow.baml
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Debug\ControlWindow.g.cs
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Debug\MainWindow.g.cs
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Debug\TargetWindow.g.cs
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Debug\App.g.cs
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Debug\WpfTransducer_MarkupCompile.cache
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Debug\WpfTransducer.g.resources
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Debug\WpfTransducer.Properties.Resources.resources
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Debug\WpfTransducer.csproj.GenerateResource.Cache
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Debug\WpfTransducer.exe
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Debug\WpfTransducer.pdb
