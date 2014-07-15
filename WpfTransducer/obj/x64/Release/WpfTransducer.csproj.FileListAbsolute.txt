@@ -14,3 +14,4 @@ C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\R
 C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Release\WpfTransducer.csproj.GenerateResource.Cache
 C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Release\WpfTransducer.exe
 C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Release\WpfTransducer.pdb
+C:\Users\Mo\Documents\GitHub\COP4367_ASSN3_MOFIDUL_JAMAL\WpfTransducer\obj\x64\Release\WpfTransducer.csprojResolveAssemblyReference.cache

@@ -32,7 +32,7 @@ namespace WpfTransducer
         public TargetWindow genWindow;
         
         GeneticAlgorithm ga;
-        ArtEvaluator sombrero = new ArtEvaluator();
+        OctoPolyArtEvaluator sombrero = new OctoPolyArtEvaluator();
 
         //TransformGroup canvasTransform;
 
@@ -46,19 +46,19 @@ namespace WpfTransducer
             ga = new GeneticAlgorithm();
             // The population size is set to 1000 individuals of 1600 doubles each. 
             // Scince the doubles are used in groups of 8 to make ellipses this will result in 200 ellipses.
-            ga.populate(500, 2400, 0.0, 1.0);
+            ga.populate(100, 800, 0.0, 1.0);
 
             // The target window displays the target image.
             targetWindow = new TargetWindow();
-            targetWindow.Height = ArtEvaluator.targetBitmap.Height * 1.1;
-            targetWindow.Width = ArtEvaluator.targetBitmap.Width * 1.1;
-            targetWindow.Background = new ImageBrush(ArtEvaluator.targetBitmap);
+            targetWindow.Height = OctoPolyArtEvaluator.targetBitmap.Height * 1.1;
+            targetWindow.Width = OctoPolyArtEvaluator.targetBitmap.Width * 1.1;
+            targetWindow.Background = new ImageBrush(OctoPolyArtEvaluator.targetBitmap);
             targetWindow.Show();
 
             // The target window displays the target image.
             genWindow = new TargetWindow();
-            genWindow.Height = ArtEvaluator.targetBitmap.Height * 1.1;
-            genWindow.Width = ArtEvaluator.targetBitmap.Width * 1.1;
+            genWindow.Height = OctoPolyArtEvaluator.targetBitmap.Height * 1.1;
+            genWindow.Width = OctoPolyArtEvaluator.targetBitmap.Width * 1.1;
             genWindow.Title = "GenWindow";
             genWindow.Show();
 
@@ -74,6 +74,8 @@ namespace WpfTransducer
         {
             for (int i = 0; i < count; i++)
             {
+                System.Diagnostics.Debug.WriteLine("iteration " + i);
+                
                 ga.scoreOfLastSolution = sombrero.evaluate(ga.solution);
             }
             return ga.bestScoreSoFar.ToString();
@@ -87,15 +89,15 @@ namespace WpfTransducer
             //Rectangle rectangle = new Rectangle();
             //Canvas.SetLeft(rectangle, 0);
             //Canvas.SetTop(rectangle, 0);
-            //rectangle.Width = ArtEvaluator.targetBitmap.Width;
-            //rectangle.Height = ArtEvaluator.targetBitmap.Height;
+            //rectangle.Width = OctoPolyArtEvaluator.targetBitmap.Width;
+            //rectangle.Height = OctoPolyArtEvaluator.targetBitmap.Height;
             //rectangle.Stroke = Brushes.Black;
             //rectangle.StrokeThickness = 5.0;
             //canvas.Children.Add(rectangle);
             //mainWindow.Content = canvas;
 
             RenderTargetBitmap rtb=null;
-            ArtEvaluator.ConvertFEtoRTB(canvas,ref rtb);
+            OctoPolyArtEvaluator.ConvertFEtoRTB(canvas,ref rtb);
             genWindow.Background = new ImageBrush(rtb);
             return "GA Plotted";
         }

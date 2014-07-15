@@ -104,8 +104,8 @@ namespace WpfTransducer
             Mutation();
         }
 
-        double probabilityOfIndividualMutation = 0.05;
-        double probabilityOfDoubleMutation = 0.03;
+        double probabilityOfIndividualMutation = 0.1;
+        double probabilityOfDoubleMutation = 0.05;
         double rangeOfDoubleMutation = 0.2;
 
         private void Mutation()
